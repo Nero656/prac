@@ -18,7 +18,8 @@ class Route
 		    if($routes[1]=="contacts") $controller_name = "contacts";
 		    else if($routes[1]=="portfolio") $controller_name = "portfolio";
             else if($routes[1]=="services") $controller_name = "services";
-            else $controller_name = "main";
+	    else if($routes[1]=="main") $controller_name = "main";
+            else $controller_name = "404";
 		}
 		$model_name = 'Model_'.$controller_name;
 		$controller_name = 'Controller_'.$controller_name;

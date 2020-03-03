@@ -2,9 +2,18 @@
 
 class Model
 {
-	// метод выборки данных
-	public function get_data()
-	{
-		// todo
-	}
+    public function __construct()
+    {
+        mysqli_set_charset($this->link = new mysqli(
+            'localhost',
+            'root',
+            '',
+            'db'
+        ), 'utf8');
+    }
+
+    public function get_data()
+    {
+    }
 }
+

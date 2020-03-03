@@ -4,11 +4,12 @@ class Model
 {
     public function __construct()
     {
+        require_once "settings.php";
         mysqli_set_charset($this->link = new mysqli(
-            'localhost',
-            'root',
-            '',
-            'db'
+            $host,
+            $user,
+            $pass,
+            $db
         ), 'utf8');
     }
 

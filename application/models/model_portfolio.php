@@ -2,16 +2,10 @@
 
 class Model_Portfolio extends Model
 {
-    public function get_data()
+    public function get_data($name_table)
     {
-
-        $sql = 'SELECT Id, Year, Site, Description FROM porfolio';
-
-        $result = mysqli_query($this->link, $sql);
-
-        return $result;
-
+        return mysqli_query($this -> link, "SELECT * FROM `$name_table`");
     }
-
 }
+
 

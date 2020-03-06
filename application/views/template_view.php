@@ -27,6 +27,29 @@
         					<a class="nav-link" href="/contacts">Контакты</a>
      					 </li>
    					 </ul>
+					 <?php if ($_SESSION['login'] == 'admin'): ?>
+              					<ul class="navbar-nav justify-content-end">
+              						<li class="nav-item">
+                						<a class="nav-link" href="/admin">Админ-панель</a>
+             						 </li>
+             					</ul>
+             				<?php endif; ?>
+             				<?php if ($_SESSION['login'] == ''): ?>
+   					 <ul class="navbar-nav justify-content-end">
+   					 	 <li class="nav-item">
+     					 	<a class="nav-link" href="/auth">Авторизация</a>
+     					 </li>
+     					 <li class="nav-item">
+     					 	<a class="nav-link" href="/register">Регистрация</a>
+     					 </li>
+   					 </ul>
+             				<?php else: ?>
+             					<ul class="navbar-nav justify-content-end">
+              						<li class="nav-item">
+                						<a class="nav-link" href="/logout">Выход</a>
+              						</li>
+            					 </ul>
+             				 <?php endif; ?>
   				</div>
 			</nav>
 				<div>

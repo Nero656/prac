@@ -11,7 +11,7 @@
         <p><label>Ссылка на сайт: <input class="form-control" type="url" placeholder="http://example.com" name="site" required></label></p>
         <p><label>Описание: <br>
         <textarea class="form-control" name="description"></textarea></label></p>
-        <input type="submit" value="Создать" name="create_portfolio">
+        <input class="btn btn-success" type="submit" value="Создать" name="create_portfolio">
     </form>
 
     <p>
